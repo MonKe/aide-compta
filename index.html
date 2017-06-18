@@ -5,11 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Aide compta</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 2ch auto;
+      max-width: 80ch;
+    }
+    label {
+      padding: 3ch 0 1ch;
+    }
+    #csv-output {
+      background: #ddd;
+      border: 1px solid #aaa;
+    }
+  </style>
 </head>
 <body>
+  <label for="csv-input">Coller les données Artidevis</label>
   <textarea name="csv-input" id="csv-input" cols="30" rows="10"></textarea>
+  <button id="csv-transform">Formater pour EBP</button>
+  <label for="csv-output">Copier les données au format EBP</label>
   <textarea name="csv-output" id="csv-output" cols="30" rows="10" readonly="readonly"></textarea>
-  <button id="csv-transform">Formatter pour EBP</button>
   <script src="main.js"></script>
 </body>
 </html>
