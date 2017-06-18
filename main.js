@@ -25,7 +25,7 @@ const
       row[6],
       row[4],
       row[5],
-      row[7],
+      i ? row[8] : row[7],
       i ? 'C' : 'D',
       parseDate(row[9], 'd/m/cy')
     ]),
@@ -50,5 +50,5 @@ let
 
 transformBtn.addEventListener('click', _ => {
   csvOutput.value = process(csvInput.value)
-  csvOutput.focus()
+  csvOutput.select()
 })

@@ -7,8 +7,8 @@ le but est de transformer ça :
 - BOURGEON PREAULT -> nom
 - 17050 -> numéro de facture
 - -> ?
-- 1441.44 -> montant
-- 0 -> débit
+- 1441.44 -> débit
+- 0 -> crédit
 - 20170615 -> date de règlement prévue
 
 + nombre irrégulier de colonnes
